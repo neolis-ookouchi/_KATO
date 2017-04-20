@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
 namespace KATO.Common.Util
 {
@@ -75,5 +76,39 @@ namespace KATO.Common.Util
         public const int CALENDER_TODAY = 0;
         public const int CALENDER_MONTH_FIRST = 1;
         public const int CALENDER_MONTH_END = 2;
+
+
+        // テーブル対応のSQLファイル
+        public const string C_SQL_DAIBUNRUI_UPD = "C_SQL_DAIBUNRUI_UPD";
+        public const string C_SQL_DAIBUNRUI_DEL = "C_SQL_DAIBUNRUI_DEL";
+
+        public static readonly SqlDbType[] P_C_SQL_DAIBUNRUI_UPD =
+        {
+            SqlDbType.Char
+            ,SqlDbType.NChar
+            ,SqlDbType.NChar
+            ,SqlDbType.NChar
+            ,SqlDbType.NChar
+            ,SqlDbType.NChar
+            ,SqlDbType.NChar
+            ,SqlDbType.NChar
+            ,SqlDbType.Char
+            ,SqlDbType.DateTime
+            ,SqlDbType.NChar
+            ,SqlDbType.DateTime
+            ,SqlDbType.NChar
+        };
+
+        public static readonly SqlDbType[] P_C_SQL_DAIBUNRUI_DEL =
+        {
+            SqlDbType.Char
+        };
+
+        public static Dictionary<String, SqlDbType[]> paramDic = new Dictionary<string, SqlDbType[]>()
+        {
+            { "C_SQL_DAIBUNRUI_UPD",  P_C_SQL_DAIBUNRUI_UPD }
+            ,{ "C_SQL_DAIBUNRUI_DEL",  P_C_SQL_DAIBUNRUI_DEL }
+        };
+        
     }
 }
