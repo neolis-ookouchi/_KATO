@@ -10,7 +10,6 @@ namespace KATO.Common.Util
 {
     class CommonTeisu
     {        
-
         // 全画面共通 タイトル
         public const String STR_TITLE = "{0}";
         //ファンクションキーボタン判定
