@@ -59,6 +59,7 @@ namespace KATO.Common.Util
             }
             finally
             {
+
                 ReadFile.Close();
                 ReadFile.Dispose();
             }
