@@ -32,6 +32,7 @@
             // 
             // BaseTextMoney
             // 
+            this.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Enter += new System.EventHandler(this.updMoneyEnter);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.updMoneyKeyPress);
             this.Leave += new System.EventHandler(this.updMoneyLeave);

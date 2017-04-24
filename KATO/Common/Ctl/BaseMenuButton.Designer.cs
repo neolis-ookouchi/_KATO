@@ -1,6 +1,6 @@
 ﻿namespace KATO.Common.Ctl
 {
-    partial class BaseLabelGray
+    partial class BaseMenuButton
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -30,17 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // BaseLabelGray
+            // BaseMenuButton
             // 
-            this.AutoEllipsis = true;
-            this.BackColor = System.Drawing.Color.Gainsboro;
-            this.Font = new System.Drawing.Font("ＭＳ ゴシック", 11.25F);
-            this.ForeColor = System.Drawing.Color.Blue;
-            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Size = new System.Drawing.Size(202, 22);
-            this.TabIndex = 99;
-            this.Text = " ";
-            this.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BackColor = System.Drawing.Color.LightYellow;
+            this.Size = new System.Drawing.Size(280, 40);
+            this.UseVisualStyleBackColor = false;
+            this.Enter += new System.EventHandler(this.BaseButton_Enter);
+            this.Leave += new System.EventHandler(this.BaseButton_Leave);
             this.ResumeLayout(false);
 
         }

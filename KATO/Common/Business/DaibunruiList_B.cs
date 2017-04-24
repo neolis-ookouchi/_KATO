@@ -124,7 +124,7 @@ namespace KATO.Common.Business
 
             strSQLName = "";
 
-            strSQLName = "M1010_Daibun_SELECT_LEAVE";
+            strSQLName = "C_LIST_Daibun_SELECT_LEAVE";
 
             //データ渡し用
             lstStringSQL.Add("Common");

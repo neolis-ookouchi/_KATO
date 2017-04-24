@@ -80,7 +80,7 @@ namespace KATO.Common.Business
 
             strSQLName = "";
 
-            strSQLName = "M1010_Daibun_SELECT_LEAVE";
+            strSQLName = "C_LIST_Daibun_SELECT_LEAVE";
 
             //データ渡し用
             lstStringSQL.Add("Common");
@@ -116,7 +116,7 @@ namespace KATO.Common.Business
             //SQLのインスタンス作成
             DBConnective dbconnective = new DBConnective();
 
-            strSQLName = "M1010_Daibun_SELECT_LEAVE";
+            strSQLName = "C_LIST_Daibun_SELECT_LEAVE";
 
             //データ渡し用
             List<string> lstStringSQL = new List<string>();
@@ -157,7 +157,7 @@ namespace KATO.Common.Business
             //データ渡し用
             List<string> lstStringSQL = new List<string>();
 
-            strSQLName = "M1110_Chubun_SELECT_LEAVE";
+            strSQLName = "C_LIST_Chubun_SELECT_LEAVE";
 
             //データ渡し用
             lstStringSQL.Add("Common");

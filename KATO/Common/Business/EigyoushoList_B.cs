@@ -112,7 +112,7 @@ namespace KATO.Common.Business
             //データ渡し用
             List<string> lstStringSQL = new List<string>();
 
-            strSQLName = "Eigyousho_SELECT_LEAVE";
+            strSQLName = "C_LIST_Eigyousho_SELECT_LEAVE";
 
             //データ渡し用
             lstStringSQL.Add("Common");

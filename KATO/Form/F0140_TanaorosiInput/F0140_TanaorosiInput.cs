@@ -54,8 +54,8 @@ namespace KATO.Form.F0140_TanaorosiInput
             lblDspTanabanEdit.TextAlign = ContentAlignment.MiddleLeft;
             lblDspChubunEdit.TextAlign = ContentAlignment.MiddleLeft;
             lblDspMakerEdit.TextAlign = ContentAlignment.MiddleLeft;
-            txtTanasuu.TextAlign = HorizontalAlignment.Right;
-            txtTyoubosuu.TextAlign = HorizontalAlignment.Right;
+            txtTanasuu.TextAlign = HorizontalAlignment.Left;
+            txtTyoubosuu.TextAlign = HorizontalAlignment.Left;
 
             //DataGridViewの初期設定
             dgvSetUp();
@@ -170,15 +170,15 @@ namespace KATO.Form.F0140_TanaorosiInput
             dgvRireki.Columns["棚卸数量"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             dgvRireki.Columns["棚卸数量"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            dgvRireki.Columns["更新区分"].Width = 50;
+            dgvRireki.Columns["更新区分"].Width = 70;
             dgvRireki.Columns["更新区分"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             dgvRireki.Columns["更新区分"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            dgvRireki.Columns["営業所コード"].Width = 100;
+            dgvRireki.Columns["営業所コード"].Width = 120;
             dgvRireki.Columns["営業所コード"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dgvRireki.Columns["営業所コード"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            dgvRireki.Columns["商品コード"].Width = 100;
+            dgvRireki.Columns["商品コード"].Width = 120;
             dgvRireki.Columns["商品コード"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dgvRireki.Columns["商品コード"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 

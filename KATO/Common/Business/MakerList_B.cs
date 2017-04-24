@@ -184,7 +184,7 @@ namespace KATO.Common.Business
             //データ渡し用
             List<string> lstStringSQL = new List<string>();
 
-            strSQLName = "M1020_Maker_SELECT_LEAVE";
+            strSQLName = "C_LIST_Maker_SELECT_LEAVE";
 
             //データ渡し用
             lstStringSQL.Add("Common");
@@ -292,7 +292,7 @@ namespace KATO.Common.Business
             //データ渡し用
             List<string> lstStringSQL = new List<string>();
 
-            strSQLName = "M1010_Daibun_SELECT_LEAVE";
+            strSQLName = "C_LIST_Daibun_SELECT_LEAVE";
 
             //データ渡し用
             lstStringSQL.Add("Common");

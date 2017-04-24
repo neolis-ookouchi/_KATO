@@ -247,7 +247,7 @@ namespace KATO.Business.M1020_Maker_B
 
             string strSQLName = null;
 
-            strSQLName = "M1020_Maker_SELECT_LEAVE";
+            strSQLName = "C_LIST_Maker_SELECT_LEAVE";
 
             //データ渡し用
             lstStringSQL.Add("Common");

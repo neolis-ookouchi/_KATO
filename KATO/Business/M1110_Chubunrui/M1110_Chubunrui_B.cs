@@ -256,7 +256,7 @@ namespace KATO.Business.M1110_Chubunrui
 
             string strSQLName = null;
 
-            strSQLName = "M1110_Chubun_SELECT_LEAVE";
+            strSQLName = "C_LIST_Chubun_SELECT_LEAVE";
 
             //データ渡し用
             lstStringSQL.Add("Common");

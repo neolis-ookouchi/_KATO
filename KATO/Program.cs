@@ -16,7 +16,7 @@ namespace KATO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KATO.Form.M1010_Daibunrui.M1010_Daibunrui());
+            Application.Run(new KATO.Form.Z0000.Z0000());
         }
     }
 }

@@ -101,6 +101,7 @@ namespace KATO.Form.M1010_Daibunrui
             // txtDaibunrui
             // 
             this.txtDaibunrui.Font = new System.Drawing.Font("ＭＳ ゴシック", 11.25F);
+            this.txtDaibunrui.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.txtDaibunrui.Location = new System.Drawing.Point(595, 97);
             this.txtDaibunrui.MaxLength = 2;
             this.txtDaibunrui.Name = "txtDaibunrui";
@@ -114,7 +115,9 @@ namespace KATO.Form.M1010_Daibunrui
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("ＭＳ ゴシック", 11.25F);
+            this.txtName.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.txtName.Location = new System.Drawing.Point(595, 132);
+            this.txtName.MaxLength = 24;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(339, 22);
             this.txtName.TabIndex = 1;
@@ -126,6 +129,7 @@ namespace KATO.Form.M1010_Daibunrui
             this.txtLabel1.Name = "txtLabel1";
             this.txtLabel1.Size = new System.Drawing.Size(100, 22);
             this.txtLabel1.TabIndex = 2;
+            this.txtLabel1.Visible = false;
             // 
             // txtLabel2
             // 
@@ -134,6 +138,7 @@ namespace KATO.Form.M1010_Daibunrui
             this.txtLabel2.Name = "txtLabel2";
             this.txtLabel2.Size = new System.Drawing.Size(100, 22);
             this.txtLabel2.TabIndex = 3;
+            this.txtLabel2.Visible = false;
             // 
             // txtLabel3
             // 
@@ -142,6 +147,7 @@ namespace KATO.Form.M1010_Daibunrui
             this.txtLabel3.Name = "txtLabel3";
             this.txtLabel3.Size = new System.Drawing.Size(100, 22);
             this.txtLabel3.TabIndex = 4;
+            this.txtLabel3.Visible = false;
             // 
             // txtLabel4
             // 
@@ -150,6 +156,7 @@ namespace KATO.Form.M1010_Daibunrui
             this.txtLabel4.Name = "txtLabel4";
             this.txtLabel4.Size = new System.Drawing.Size(100, 22);
             this.txtLabel4.TabIndex = 5;
+            this.txtLabel4.Visible = false;
             // 
             // txtLabel5
             // 
@@ -158,6 +165,7 @@ namespace KATO.Form.M1010_Daibunrui
             this.txtLabel5.Name = "txtLabel5";
             this.txtLabel5.Size = new System.Drawing.Size(100, 22);
             this.txtLabel5.TabIndex = 6;
+            this.txtLabel5.Visible = false;
             // 
             // txtLabel6
             // 
@@ -166,6 +174,7 @@ namespace KATO.Form.M1010_Daibunrui
             this.txtLabel6.Name = "txtLabel6";
             this.txtLabel6.Size = new System.Drawing.Size(100, 22);
             this.txtLabel6.TabIndex = 7;
+            this.txtLabel6.Visible = false;
             // 
             // baseLabel1
             // 
@@ -250,6 +259,7 @@ namespace KATO.Form.M1010_Daibunrui
             this.baseLabel8.Size = new System.Drawing.Size(87, 15);
             this.baseLabel8.TabIndex = 92;
             this.baseLabel8.Text = "ラベル名６";
+            this.baseLabel8.Visible = false;
             // 
             // M1010_Daibunrui
             // 

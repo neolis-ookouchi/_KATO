@@ -189,6 +189,24 @@ namespace KATO.Form.M1110_Chubunrui
                     return;
                 }
             }
+            //文字判定
+            if (txtElem.blIsEmpty() == false)
+            {
+                //メッセージボックスの処理、項目が空の場合のウィンドウ（OK）
+                BaseMessageBox basemessagebox = new BaseMessageBox(this, CommonTeisu.TEXT_INPUT, CommonTeisu.LABEL_NULL, CommonTeisu.BTN_OK, CommonTeisu.DIAG_ERROR);
+
+                //OKが押された場合
+                if (basemessagebox.ShowDialog() == DialogResult.OK)
+                {
+                    txtElem.Focus();
+                    return;
+                }
+                else
+                {
+                    return;
+                }
+            }
+
 
             //データ渡し用
             lstString.Add(txtDaibunrui.Text);

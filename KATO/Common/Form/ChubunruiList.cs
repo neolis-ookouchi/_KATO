@@ -30,8 +30,19 @@ namespace KATO.Common.Form
 
         }
 
+        public string _Title
+        {
+            set
+            {
+                String[] aryTitle = new string[] { value };
+                this.Text = string.Format(STR_TITLE, aryTitle);
+            }
+        }
+
         private void CyokusousakiList_Load(object sender, EventArgs e)
         {
+            this.Show();
+            this._Title = "中分類リスト";
             // フォームでもキーイベントを受け取る
             this.KeyPreview = true;
             this.btnF11.Text = "F11:検索";

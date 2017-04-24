@@ -135,7 +135,7 @@ namespace KATO.Business.F0140_TanaorosiInput_B
                         strTextCase = lstString[0];
                     }
 
-                    strSQLName = "Eigyousho_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Eigyousho_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -162,7 +162,7 @@ namespace KATO.Business.F0140_TanaorosiInput_B
                         strTextCase = lstString[1];
                     }
 
-                    strSQLName = "M1010_Daibun_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Daibun_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -188,7 +188,7 @@ namespace KATO.Business.F0140_TanaorosiInput_B
                         strTextCase = lstString[2];
                     }
 
-                    strSQLName = "M1110_Chubun_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Chubun_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -214,7 +214,7 @@ namespace KATO.Business.F0140_TanaorosiInput_B
                         strTextCase = lstString[3];
                     }
 
-                    strSQLName = "M1020_Maker_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Maker_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -240,7 +240,7 @@ namespace KATO.Business.F0140_TanaorosiInput_B
                     {
                         strTextCase = lstString[4];
                     }
-                    strSQLName = "Tanaban_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Tanaban_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -265,7 +265,7 @@ namespace KATO.Business.F0140_TanaorosiInput_B
                     {
                         strTextCase = lstString[5];
                     }
-                    strSQLName = "M1110_Chubun_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Chubun_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -290,7 +290,7 @@ namespace KATO.Business.F0140_TanaorosiInput_B
                     {
                         strTextCase = lstString[6];
                     }
-                    strSQLName = "M1020_Maker_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Maker_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -315,7 +315,7 @@ namespace KATO.Business.F0140_TanaorosiInput_B
                     {
                         strTextCase = lstString[7];
                     }
-                    strSQLName = "Tanaban_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Tanaban_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");

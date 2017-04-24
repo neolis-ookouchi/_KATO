@@ -60,9 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\JuchuInput\JuchuInput_B.cs" />
+    <Compile Include="Business\M1010_Daibunrui\M1010_Daibunrui_B.cs" />
     <Compile Include="Business\M1110_Chubunrui\M1110_Chubunrui_B.cs" />
     <Compile Include="Business\M1020_Maker\M1020_Maker_B.cs" />
-    <Compile Include="Business\M1010_Daibunrui\M1010_Daibunrui_B.cs" />
     <Compile Include="Business\F0140_TanaorosiInput\F0140_TanaorosiInput_B.cs" />
     <Compile Include="Common\Business\ChubunruiList_B.cs" />
     <Compile Include="Common\Business\DaibunruiList_B.cs" />
@@ -112,6 +112,12 @@
     <Compile Include="Common\Ctl\BaseLabelGray.Designer.cs">
       <DependentUpon>BaseLabelGray.cs</DependentUpon>
     </Compile>
+    <Compile Include="Common\Ctl\BaseMenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\Ctl\BaseMenuButton.Designer.cs">
+      <DependentUpon>BaseMenuButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\Ctl\BaseMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,12 @@
     </Compile>
     <Compile Include="Common\Ctl\BaseCalendar.designer.cs">
       <DependentUpon>BaseCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Ctl\BaseTextLabelSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\Ctl\BaseTextLabelSet.designer.cs">
+      <DependentUpon>BaseTextLabelSet.cs</DependentUpon>
     </Compile>
     <Compile Include="Common\Ctl\BaseTextMoney.cs">
       <SubType>Component</SubType>
@@ -229,6 +241,12 @@
     <Compile Include="Common\Form\TantousyaList.Designer.cs">
       <DependentUpon>TantousyaList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Z0000\Z0000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Z0000\Z0000.Designer.cs">
+      <DependentUpon>Z0000.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Common\Ctl\BaseButton.resx">
@@ -258,6 +276,9 @@
     <EmbeddedResource Include="Common\Ctl\BaseLabelGray.resx">
       <DependentUpon>BaseLabelGray.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Common\Ctl\BaseMenuButton.resx">
+      <DependentUpon>BaseMenuButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Common\Ctl\BaseMessageBox.resx">
       <DependentUpon>BaseMessageBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Common\Ctl\BaseCalendar.resx">
       <DependentUpon>BaseCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Ctl\BaseTextLabelSet.resx">
+      <DependentUpon>BaseTextLabelSet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Common\Ctl\BaseTextMoney.resx">
       <DependentUpon>BaseTextMoney.cs</DependentUpon>
@@ -311,6 +335,9 @@
     <EmbeddedResource Include="Common\Form\TantousyaList.resx">
       <DependentUpon>TantousyaList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Z0000\Z0000.resx">
+      <DependentUpon>Z0000.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -342,15 +369,17 @@
     <Content Include="SQL\Common\CommonForm\ChubunruiList_View.sql" />
     <Content Include="SQL\Common\CommonForm\MakerList_View.sql" />
     <Content Include="SQL\Common\CommonForm\EigyoushoList_View.sql" />
-    <Content Include="SQL\Common\Eigyousho_SELECT_LEAVE.sql" />
+    <Content Include="SQL\Common\C_LIST_Eigyousho_SELECT_LEAVE.sql" />
+    <Content Include="SQL\Common\C_SQL_DAIBUNRUI_DEL.sql" />
+    <Content Include="SQL\Common\C_SQL_DAIBUNRUI_UPD.sql" />
     <Content Include="SQL\JuchuInput_DataGridView.sql" />
     <Content Include="SQL\JuchuInput_Chubun_SELECT_LEAVE.sql" />
-    <Content Include="SQL\Common\Tanaban_SELECT_LEAVE.sql" />
+    <Content Include="SQL\Common\C_LIST_Tanaban_SELECT_LEAVE.sql" />
     <Content Include="SQL\F0140_Tanaorosi\Tanaorosi_SELECT_SetDataGridView.sql" />
     <Content Include="SQL\Common\CommonForm\DaibunruiList_View.sql" />
     <Content Include="SQL\F0140_Tanaorosi\Tanaorosi_SELECT_SetYMD.sql" />
     <Content Include="SQL\F0140_Tanaorosi\Tanaorosi_SELECT_SetItem.sql" />
-    <Content Include="SQL\Common\M1020_Maker_SELECT_LEAVE.sql" />
+    <Content Include="SQL\Common\C_LIST_Maker_SELECT_LEAVE.sql" />
     <Content Include="SQL\M1020_Maker\M1020_Maker_SELECT_Kaburi_DEL.sql" />
     <Content Include="SQL\M1020_Maker\M1020_Maker_UPDATE_DELETE.sql" />
     <Content Include="SQL\M1020_Maker\M1020_Maker_UPDATE.sql" />
@@ -358,8 +387,8 @@
     <Content Include="SQL\M1020_Maker\M1020_Maker_SELECT_Kaburi_ADD.sql" />
     <Content Include="SQL\M1110_Chubunrui\M1110_Chubun_SELECT_Kaburi_ADD.sql" />
     <Content Include="SQL\M1110_Chubunrui\M1110_Chubun_SELECT_Kaburi_DEL.sql" />
-    <Content Include="SQL\Common\M1010_Daibun_SELECT_LEAVE.sql" />
-    <Content Include="SQL\Common\M1110_Chubun_SELECT_LEAVE.sql" />
+    <Content Include="SQL\Common\C_LIST_Daibun_SELECT_LEAVE.sql" />
+    <Content Include="SQL\Common\C_LIST_Chubun_SELECT_LEAVE.sql" />
     <Content Include="SQL\M1110_Chubunrui\M1110_Chubun_UPDATE.sql" />
     <Content Include="SQL\M1110_Chubunrui\M1110_Chubun_INSERT.sql" />
     <Content Include="SQL\M1010_Daibunrui\M1010_Daibun_UPDATE_DELETE.sql" />

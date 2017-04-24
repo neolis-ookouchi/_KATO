@@ -193,7 +193,7 @@ namespace KATO.Common.Business
                         strTextCase = lstString[0];
                     }
 
-                    strSQLName = "M1010_Daibun_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Daibun_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -227,7 +227,7 @@ namespace KATO.Common.Business
                         strTextCase = lstString[1];
                     }
 
-                    strSQLName = "M1110_Chubun_SELECT_LEAVE";
+                    strSQLName = "C_LIST_Chubun_SELECT_LEAVE";
 
                     //データ渡し用
                     lstStringSQL.Add("Common");
@@ -315,9 +315,9 @@ namespace KATO.Common.Business
             string strSQLNameD = null;
             string strSQLNameC = null;
 
-            strSQLNameM = "M1020_Maker_SELECT_LEAVE";
-            strSQLNameD = "M1010_Daibun_SELECT_LEAVE";
-            strSQLNameC = "M1110_Chubun_SELECT_LEAVE";
+            strSQLNameM = "C_LIST_Maker_SELECT_LEAVE";
+            strSQLNameD = "C_LIST_Daibun_SELECT_LEAVE";
+            strSQLNameC = "C_LIST_Chubun_SELECT_LEAVE";
 
             //配列設定
             string[] strArrayM = { lstString[3] };

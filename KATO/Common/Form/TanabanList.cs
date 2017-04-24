@@ -11,6 +11,8 @@ using KATO.Form.F0140_TanaorosiInput;
 using KATO.Common.Util;
 using KATO.Common.Business;
 using System.Security.Permissions;
+using static KATO.Common.Util.CommonTeisu;
+
 
 namespace KATO.Common.Form
 {
@@ -27,16 +29,25 @@ namespace KATO.Common.Form
             InitializeComponent();
         }
 
+        public string _Title
+        {
+            set
+            {
+                String[] aryTitle = new string[] { value };
+                this.Text = string.Format(STR_TITLE, aryTitle);
+            }
+        }
+
         private void TanabanList_Load(object sender, EventArgs e)
         {
+            this.Show();
+            this._Title = "棚番リスト";
+
             // フォームでもキーイベントを受け取る
             this.KeyPreview = true;
-            this.btnF11.Text = "F11:検索";
             this.btnF12.Text = "F12:戻る";
 
             setDatagridView();
-
-            radioButton1.Checked = true;
         }
 
         ///<summary>
@@ -125,8 +136,6 @@ namespace KATO.Common.Form
                 case Keys.F10:
                     break;
                 case Keys.F11:
-                    //検索ボタン
-                    this.btnKensakuClick(sender, e);
                     break;
                 case Keys.F12:
                     //戻るボタン
@@ -136,49 +145,6 @@ namespace KATO.Common.Form
                 default:
                     break;
             }
-        }
-
-        ///<summary>
-        ///setKensakuClick
-        ///検索ボタンを押したとき
-        ///作成者：大河内
-        ///作成日：2017/3/14
-        ///更新者：大河内
-        ///更新日：2017/3/14
-        ///カラム論理名
-        ///</summary>
-        public void btnKensakuClick(object sender, EventArgs e)
-        {
-            //並び替えの準備
-            ListSortDirection sortDirection = dgvSeihin.SortOrder == SortOrder.Ascending ?
-            ListSortDirection.Ascending : ListSortDirection.Ascending;
-
-            //コード昇順
-            if (radioButton1.Checked == true)
-            {
-                if (intOrderCode != 1)
-                {
-                    setDatagridView();
-                    dgvSeihin.Sort(dgvSeihin.Columns[0], sortDirection);
-                }
-                intOrderCode = 1;
-            }
-            //名前昇順
-            else if (radioButton2.Checked == true)
-            {
-                if (intOrderCode != 2)
-                {
-                    setDatagridView();
-                    dgvSeihin.Sort(dgvSeihin.Columns[1], sortDirection);
-                }
-                intOrderCode = 2;
-            }
-            else
-            {
-                MessageBox.Show("出力順が選択されていません");
-                return;
-            }
-            dgvSeihin.Focus();
         }
 
         ///<summary>
@@ -280,8 +246,6 @@ namespace KATO.Common.Form
                 case Keys.F10:
                     break;
                 case Keys.F11:
-                    //検索ボタン
-                    this.btnKensakuClick(sender, e);
                     break;
                 case Keys.F12:
                     //戻るボタン

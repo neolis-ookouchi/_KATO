@@ -98,7 +98,6 @@ namespace KATO.Form.M1110_Chubunrui
             this.txtDaibunrui.Name = "txtDaibunrui";
             this.txtDaibunrui.Size = new System.Drawing.Size(33, 22);
             this.txtDaibunrui.TabIndex = 0;
-            this.txtDaibunrui.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtDaibunrui.KeyDown += new System.Windows.Forms.KeyEventHandler(this.judtxtCDKeyDown);
             this.txtDaibunrui.KeyUp += new System.Windows.Forms.KeyEventHandler(this.judtxtDaibunruiKeyUp);
             this.txtDaibunrui.Leave += new System.EventHandler(this.judtxtDaibunruiLeave);
@@ -111,7 +110,6 @@ namespace KATO.Form.M1110_Chubunrui
             this.txtChubunrui.Name = "txtChubunrui";
             this.txtChubunrui.Size = new System.Drawing.Size(33, 22);
             this.txtChubunrui.TabIndex = 1;
-            this.txtChubunrui.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtChubunrui.KeyDown += new System.Windows.Forms.KeyEventHandler(this.judtxtCyokuCDKeyDown);
             this.txtChubunrui.KeyUp += new System.Windows.Forms.KeyEventHandler(this.judtxtChubunruiKeyUp);
             this.txtChubunrui.Leave += new System.EventHandler(this.judtxtChubunruiLeave);
@@ -137,7 +135,7 @@ namespace KATO.Form.M1110_Chubunrui
             this.lblDsp.Size = new System.Drawing.Size(202, 23);
             this.lblDsp.TabIndex = 88;
             this.lblDsp.Text = " ";
-            this.lblDsp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDsp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // baseLabel1
             // 
@@ -148,6 +146,7 @@ namespace KATO.Form.M1110_Chubunrui
             this.baseLabel1.Size = new System.Drawing.Size(103, 15);
             this.baseLabel1.TabIndex = 89;
             this.baseLabel1.Text = "大分類コード";
+            this.baseLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // baseLabel2
             // 
@@ -158,6 +157,7 @@ namespace KATO.Form.M1110_Chubunrui
             this.baseLabel2.Size = new System.Drawing.Size(103, 15);
             this.baseLabel2.TabIndex = 90;
             this.baseLabel2.Text = "中分類コード";
+            this.baseLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // baseLabel3
             // 
@@ -168,6 +168,7 @@ namespace KATO.Form.M1110_Chubunrui
             this.baseLabel3.Size = new System.Drawing.Size(71, 15);
             this.baseLabel3.TabIndex = 91;
             this.baseLabel3.Text = "中分類名";
+            this.baseLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // M1110_Chubunrui
             // 

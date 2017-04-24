@@ -13,15 +13,15 @@ namespace KATO.Common.Util
         // 全画面共通 タイトル
         public const String STR_TITLE = "{0}";
         //ファンクションキーボタン判定
-        public const String STR_FUNC_F1  = "F1:登録";
-        public const String STR_FUNC_F2  = "";
-        public const String STR_FUNC_F3  = "F3:削除";
-        public const String STR_FUNC_F4  = "F4:取消";
-        public const String STR_FUNC_F5  = "";
-        public const String STR_FUNC_F6  = "";
-        public const String STR_FUNC_F7  = "";
-        public const String STR_FUNC_F8  = "";
-        public const String STR_FUNC_F9  = "F9:検索";
+        public const String STR_FUNC_F1 = "F1:登録";
+        public const String STR_FUNC_F2 = "";
+        public const String STR_FUNC_F3 = "F3:削除";
+        public const String STR_FUNC_F4 = "F4:取消";
+        public const String STR_FUNC_F5 = "";
+        public const String STR_FUNC_F6 = "";
+        public const String STR_FUNC_F7 = "";
+        public const String STR_FUNC_F8 = "";
+        public const String STR_FUNC_F9 = "F9:検索";
         public const String STR_FUNC_F10 = "";
         public const String STR_FUNC_F11 = "F11:印刷";
         public const String STR_FUNC_F12 = "F12:終了";
@@ -109,6 +109,6 @@ namespace KATO.Common.Util
             { "C_SQL_DAIBUNRUI_UPD",  P_C_SQL_DAIBUNRUI_UPD }
             ,{ "C_SQL_DAIBUNRUI_DEL",  P_C_SQL_DAIBUNRUI_DEL }
         };
-        
+
     }
 }
